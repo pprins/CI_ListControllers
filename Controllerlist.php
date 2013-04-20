@@ -85,7 +85,7 @@ class ControllerList {
 					$this->setControllerMethods($subdircontrollername, $aUserMethods);					 					
 				}
 			}
-			else {
+			else if(pathinfo($controller, PATHINFO_EXTENSION) == "php"){
 				// value is no directory get controller name				
 			    $controllername = basename($controller, EXT);
 									
@@ -97,9 +97,11 @@ class ControllerList {
 				// Add controller and methods to the array
 				$aMethods = get_class_methods($controllername);
 				$aUserMethods = array();
-				foreach($aMethods as $method) {
-					if($method != '__construct' && $method != 'get_instance' && $method != $controllername) {
-						$aUserMethods[] = $method;
+				if(is_array($aMethods)){
+					foreach($aMethods as $method) {
+						if($method != '__construct' && $method != 'get_instance' && $method != $controllername) {
+							$aUserMethods[] = $method;
+						}
 					}
 				}
 									

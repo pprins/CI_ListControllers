@@ -16,4 +16,4 @@ print_r($this->controllerlist->getControllers());
 
 This will show you an array with all the controllers and their methods.
 
-Contact me at [Cleverweb](http://www.keyboardninja.eu)
+Contact me at [Keyboardninja](http://www.keyboardninja.eu)

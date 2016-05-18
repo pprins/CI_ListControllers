@@ -1,7 +1,7 @@
 Controllerlist
 ==========
 
-A simple library to list all your controllers and methods of your Codeigniter application.
+A simple library to list all your controllers and methods of your Codeigniter 2 application.
 
 Usage
 ==========
@@ -16,4 +16,4 @@ print_r($this->controllerlist->getControllers());
 
 This will show you an array with all the controllers and their methods.
 
-Contact me at [Cleverweb](http://www.cleverweb.nl)
+Contact me at [Cleverweb](http://www.keyboardninja.eu)
